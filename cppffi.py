@@ -20,6 +20,8 @@ class FFI(cffi.FFI):
 		val = self._gblInterpreter.Declare(cppsource)
 		if val == False:
 			raise TypeError("Error in the Compilation Process")
+		else:
+			print val
 		
 	def sizeof( self , cdecl = ""):
 
